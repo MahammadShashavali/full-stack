@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            background-color: rgb(79, 64, 181);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Moving Text */
+        .moving-text {
+            margin-top: 20px;
+            animation: moveText 4s infinite alternate;
+            color: rgb(19, 185, 118);
+        }
+
+        @keyframes moveText {
+            0% {
+                margin-left: 0px;
+            }
+
+            100% {
+                margin-left: 200px;
+                margin-right: 100px;
+            }
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333; 
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(26, 18, 18, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(87, 39, 198);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555; 
+            color: aqua;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content text
+        {
+            color: aqua;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 150px;
+        }
+
+        .social-icons a {
+            margin-right: 20px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 60px; /* Adjust the size of the icons as needed */
+            height: 60px;
+        }
+
+        /* Newsletter Form */
+        .newsletter {
+            margin-top: 200px;
+        }
+
+        .newsletter input[type="text"],
+        .newsletter input[type="email"],
+        .newsletter button {
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+
+        .newsletter button {
+            background-color: #032704; 
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background-color: #45a049; 
+        }       
+    </style>
+</head>
+<body>
+
+<!-- Moving Text -->
+<div class="moving-text">
+    <p>Hello Welcome to My page</p>
+</div>
+
+<!-- Dropdown Menu -->
+<div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Help</a>
+    </div>
+    <p>This page contains the drop down menu,Moving text from left to right,social media logos embeded with links and email news letter</p>
+</div>
+
+<!-- Social Media Icons -->
+<div class="social-icons">
+    <a href="http://www.facebook.com"><img src="C:\Users\maham\OneDrive\Documents\fs\Facebook.png" alt="Facebook"></a>
+    <a href="http://www.github.com"><img src="C:\Users\maham\OneDrive\Documents\fs\1.jpeg" alt="Github"></a>
+    <a href="http://www.instagram.com"><img src="C:\Users\maham\OneDrive\Documents\fs\instagram-logo-5.png" alt="Instagram"></a>
+</div>
+
+<!-- Email Newsletter Form -->
+<div class="newsletter">
+    <h2>Subscribe to our newsletter</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+</body>
+</html>
